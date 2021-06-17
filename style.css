@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /*background-color: #eee;*/
+    background-image: url('https://media.giphy.com/media/Y3MLVPRtnzpbygOqef/giphy.gif');
+    background-size: cover;
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.music-app {
+    background-color: #fff;
+    padding: 100px 50px;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 17px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2)
+}
+
+.song-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #26A5FF;
+    width: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(70, 20, 20, 0.3);
+    background-position: center;
+    background-size: cover;
+    background-image: url('');
+}
+
+.song-img:after {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.song-img:before {
+    content:'';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 2px solid #EEE;
+    border-radius: 50%;
+}
+
+.song-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.song-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #313131;
+    margin-bottom: 5px;
+}
+
+.song-info h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #313131;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.music-controls .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #26A5FF;
+    color:#fff;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(38, 165, 255, 0.6);
+    transition: 0.4s;
+}
+
+.music-controls .play:hover {
+    box-shadow: 0px 3px 6px rgba(38, 165, 255, 2.0);
+}
+
+.music-controls .skip-btn {
+    color: #CCC;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    transition: 0.4s;
+
+}
+.music-controls .skip-btn:hover {
+    color: #888;
+}
+
+.nxt-song p {
+    color: #888;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.nxt-song span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+@media (max-width: 414px) {
+    .music-player {
+        min-height: 100vh;
+        border-radius: 0px;
+        padding: 75px 30px; 
+    }
+}
